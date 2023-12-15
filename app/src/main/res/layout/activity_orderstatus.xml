@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".orderstatus">
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="40dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="40dp"
+        android:forceHasOverlappingRendering="true"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Orders!"
+        android:id="@+id/OrdersTitle"
+        android:textSize="40sp"
+        android:layout_below="@+id/imageViewBack"
+        android:textColor="@color/green"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listOrders"
+        android:layout_below="@+id/OrdersTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</RelativeLayout>

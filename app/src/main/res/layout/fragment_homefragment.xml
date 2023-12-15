@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".homefragment"
+    android:id="@+id/homefragment">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/LocationBar"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/lightyellow"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Location"
+                        android:id="@+id/LocationHome"
+                        android:textColor="@color/darkblue"
+                        android:layout_alignLeft="@+id/locationicon"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"/>
+
+                    <ImageView
+                        android:id="@+id/locationicon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_baseline_my_location_24"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_marginLeft="10dp"/>
+
+
+                </RelativeLayout>
+                <!--  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:layout_marginRight="20dp"
+                      android:layout_marginBottom="10dp"
+                      android:layout_marginLeft="20dp"
+                      android:background="@color/white"
+                      android:elevation="8dp">
+
+                      <SearchView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_centerVertical="true"
+                          android:layout_marginLeft="20dp"
+                          android:background="@color/white"
+                          android:layout_marginRight="20dp"
+                          android:hint="Search..."
+                          android:textSize="15dp" />
+
+                      <ImageView
+                          android:layout_width="25dp"
+                          android:layout_height="25dp"
+                          android:src="@android:drawable/ic_search_category_default"
+                          android:layout_centerVertical="true"
+                          android:layout_alignParentEnd="true"
+                          android:layout_marginEnd="15dp"/>
+                </RelativeLayout>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/card"
+                        android:elevation="8dp"
+                        android:id="@+id/homePujaIconBar"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/fire"
+                            android:layout_centerInParent="true"/>
+
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Puja"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/card"
+                        android:elevation="8dp"
+                        android:id="@+id/homeWedIconBar"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/hinduwedding"
+                            android:layout_centerInParent="true"/>
+
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Wedding"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/card"
+                        android:elevation="8dp"
+                        android:id="@+id/homeAstroIconBar"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/constellations"
+                            android:layout_centerInParent="true"/>
+
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Astrology"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/card"
+                        android:elevation="8dp"
+                        android:id="@+id/homeTarotIconBar"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/tarotplay"
+                            android:layout_centerInParent="true"/>
+
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Tarot"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/lightyellow">
+
+                <LinearLayout
+                    android:id="@+id/popularpuja"
+                    android:layout_width="120dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/brightyellow"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="Popular pujas "
+                        android:textAlignment="center"
+                        android:textColor="@color/darkblue"
+                        android:fontFamily="@font/robobold"
+                        android:layout_marginTop="70dp"
+                        android:textAllCaps="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:text="Explore which pujas are popular right now "
+                        android:textColor="@color/darkblue"
+                        android:fontFamily="@font/robolightitalic"
+                        android:layout_margin="5dp"
+                        />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pujaRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+
+                    android:layout_toRightOf="@id/popularpuja" />
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robobold"
+                        android:text="Wedding planner"
+                        android:textAllCaps="true"
+
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="View All" />
+
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/weddingRecyler"
+                    android:layout_width="match_parent"
+                    android:layout_height="208dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quick Astrology"
+                        android:textSize="20sp"
+
+                        android:fontFamily="@font/robobold"
+                        android:textAllCaps="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View All"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+
+
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/astroRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="1dp"
+    android:layout_margin="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#xxxxxxxx"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/robobolditalic"/>
+
+        <TextView
+            android:id="@+id/orderstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderid"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/robolight"
+            android:text="Status"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/ordername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderstatus"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/robolight"
+            android:text="Order name"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/orderaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ordername"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/robolight"
+            android:text="Address"
+            android:textSize="12dp" />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="7dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+
+            android:id="@+id/astrologyImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/fire"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/astrologyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Astrology type 1"
+            android:layout_marginTop="7dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/robobold"/>
+        <TextView
+            android:id="@+id/astrologydesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Astrology type 1"
+            android:layout_marginTop="7dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/robolightitalic"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

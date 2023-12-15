@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pujainfo">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbardrop"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:title="Puja"
+            android:id="@+id/colapsing_toolbar">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pujabg"
+                android:id="@+id/pujainfoImage"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center|end"
+                app:layout_collapseMode="parallax"/>
+            <ImageView
+                android:id="@+id/imageViewBack"
+                android:layout_width="40dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="40dp"
+                android:forceHasOverlappingRendering="true"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/pujaNametextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robobolditalic"
+                    android:text="Book "
+                    android:textAllCaps="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/darkblue"
+                    android:textSize="35sp" />
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+                android:orientation="vertical"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robobold"
+                        android:text="Puja Info"
+                        android:id="@+id/pujaprice"
+                        android:textAllCaps="true"
+                        android:textColor="@color/green"
+                        android:textSize="45sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/pujapricedetails"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text=""
+
+                        android:fontFamily="@font/monlight"
+                        android:layout_margin="5dp"
+                        android:layout_below="@+id/pujaprice"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robobold"
+                        android:text="Do you want Puja Samagri?"
+                        android:id="@+id/pujaSamagri"
+                        android:layout_margin="5dp"
+
+
+                        android:textSize="18sp" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/pujaSamagri"
+                        android:textOff="No"
+                        android:layout_centerVertical="true"
+                        android:thumb="@drawable/track"
+                        android:id="@+id/samagriButton"
+
+                        android:fontFamily="@font/monlight"
+                        android:layout_marginLeft="10dp"
+                        android:track="@drawable/trackcolor"
+                        android:textOn="Yes" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Book Now"
+                        android:id="@+id/PujaBook"
+                        android:background="@drawable/button"
+                        android:textSize="20dp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robobold"
+                        android:text="Puja Info"
+                        android:id="@+id/pujainfoSub"
+                        android:textAllCaps="true"
+
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/pujaInfoDetails"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="Explore which pujas are popular right now "
+
+                        android:fontFamily="@font/monlight"
+                        android:layout_margin="5dp"
+                        android:layout_below="@+id/pujainfoSub"
+                        />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robobold"
+                        android:text="Importance"
+                        android:id="@+id/pujaimpoTitle"
+                        android:textAllCaps="true"
+
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/pujaImportance"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="Explore which pujas are popular right now "
+
+                        android:fontFamily="@font/monlight"
+                        android:layout_margin="5dp"
+                        android:layout_below="@+id/pujaimpoTitle"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/lightyellow">
+
+                <LinearLayout
+                    android:id="@+id/popularpuja"
+                    android:layout_width="140dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/brightyellow"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:text="Popular pujas "
+                        android:textColor="@color/darkblue"
+                        android:fontFamily="@font/robobold"
+                        android:layout_marginTop="60dp"
+                        android:textAllCaps="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="Explore which pujas are popular right now "
+                        android:textColor="@color/darkblue"
+                        android:fontFamily="@font/robolightitalic"
+                        android:layout_margin="5dp"
+                        />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pujaRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+
+                    android:layout_toRightOf="@id/popularpuja" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/shimheadd"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/shimhead">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pujabg"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center|end"
+                />
+
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/shimheadd"
+        android:id="@+id/shimtop">
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:background="#e7e7e7"
+            android:textAllCaps="true"
+            android:textColor="@color/darkblue"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shimone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/shimtop"
+        android:elevation="8dp"
+        android:background="@color/lightyellow"
+        >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reala1">
+
+            <View
+                android:id="@+id/shim"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:background="#e7e7e7"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/robobold"
+
+                />
+
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="180dp"
+                android:layout_height="280dp"
+                android:layout_below="@+id/shim"
+                android:id="@+id/shimcard"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/shview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:background="#e7e7e7"
+
+                        />
+                    <View
+                        android:id="@+id/shview2"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="#e7e7e7"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/darkblue"
+                        android:fontFamily="@font/robobold"/>
+
+                    <View
+                        android:id="@+id/shview3"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="#e7e7e7"
+                        android:layout_marginTop="10dp"
+                        />
+                    <View
+                        android:id="@+id/shview5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e7e7e7"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="180dp"
+                android:layout_height="280dp"
+                android:layout_below="@+id/shim"
+               android:layout_alignParentRight="true"
+                android:id="@+id/shimcard2"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/shview6"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:background="#e7e7e7"
+
+                        />
+                    <View
+                        android:id="@+id/shview7"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="#e7e7e7"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/darkblue"
+                        android:fontFamily="@font/robobold"/>
+
+                    <View
+                        android:id="@+id/shview8"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="#e7e7e7"
+                        android:layout_marginTop="10dp"
+                        />
+                    <View
+                        android:id="@+id/shview9"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e7e7e7"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shimtwo"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/shimone"
+        android:elevation="8dp"
+        android:background="@color/lightyellow"
+        >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reala2">
+
+            <TextView
+                android:id="@+id/shim1"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:background="#e7e7e7"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/robobold"
+
+                />
+
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="180dp"
+                android:layout_height="280dp"
+                android:layout_below="@+id/shim1"
+
+
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/shview10"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:background="#e7e7e7"
+
+                        />
+                    <View
+                        android:id="@+id/shview11"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="#e7e7e7"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/darkblue"
+                        android:fontFamily="@font/robobold"/>
+
+                    <View
+                        android:id="@+id/shview12"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="#e7e7e7"
+                        android:layout_marginTop="10dp"
+                        />
+                    <View
+                        android:id="@+id/shview13"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e7e7e7"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="180dp"
+                android:layout_height="280dp"
+                android:layout_below="@+id/shim1"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/shview14"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:background="#e7e7e7"
+
+                        />
+                    <View
+                        android:id="@+id/shview15"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="#e7e7e7"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/darkblue"
+                        android:fontFamily="@font/robobold"/>
+
+                    <View
+                        android:id="@+id/shview16"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="#e7e7e7"
+                        android:layout_marginTop="10dp"
+                        />
+                    <View
+                        android:id="@+id/shview17"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e7e7e7"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

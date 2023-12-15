@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ProfileMenu"
+            android:title="Profile"
+            android:icon="@drawable/ic_baseline_account_circle_24"/>
+        <item
+            android:id="@+id/homemenu"
+            android:title="Home"
+            android:icon="@drawable/ic_home"/>
+        <item
+            android:id="@+id/recentOrder"
+            android:title="Recent Orders"
+            android:icon="@drawable/ic_baseline_shopping_basket_24"/>
+        <item
+            android:id="@+id/Contact"
+            android:title="Support"
+            android:icon="@drawable/ic_baseline_support_agent_24"/>
+
+        <item
+            android:id="@+id/Logoutmenu"
+            android:title="Logout"
+            android:icon="@drawable/ic_baseline_keyboard_backspace_24"/>
+
+
+
+    </group>
+    <item android:title="Privacy Policy">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/termsofuse"
+                    android:title="Read Terms of use"
+                    android:icon="@drawable/ic_baseline_account_circle_24"/>
+                <item
+                    android:id="@+id/userdata"
+                    android:title="Data usage"
+                    android:icon="@drawable/ic_baseline_account_circle_24"/>
+
+            </group>
+
+        </menu>
+
+    </item>
+</menu>

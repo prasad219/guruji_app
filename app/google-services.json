@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1003530815260",
+    "project_id": "guruji-bulao",
+    "storage_bucket": "guruji-bulao.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003530815260:android:750964074bc3360bfa5cd9",
+        "android_client_info": {
+          "package_name": "com.guruji.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003530815260-vv45ecnjut2uc9t42061n36nlugmllal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgmjIhRmtNhEdmIUY8K2vkVvhkoQLB9OM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003530815260-vv45ecnjut2uc9t42061n36nlugmllal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
